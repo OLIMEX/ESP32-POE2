@@ -1,7 +1,7 @@
 /*
    Olimex ESP32-POE2 + MOD-RTC (PCF8563T) Arduino IDE Demo
    ------------------------------------------------------
-   ESP32-POE2 uses WROVER module, make sure to select PSRAM enabled (WROOM) from Tools
+   ESP32-POE2 uses WROVER module, make sure to select PSRAM enabled (WROVER) from Tools
 
    After downloading to the board, go to Tools -> Serial Monitor and set baud to 115200
    
