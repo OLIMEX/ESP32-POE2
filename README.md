@@ -7,5 +7,6 @@ https://www.olimex.com/Products/IoT/ESP32/ESP32-POE2/open-source-hardware
 
 ## Licensee
 * Hardware is released under CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+* Box design is released under CC BY 4.0 License
 * Software is released under GPL V3 Licensee
 * Documentation is released under CC BY-SA 4.0
