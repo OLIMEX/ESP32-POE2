@@ -6,30 +6,23 @@ esp32:
   board: esp32dev
   framework:
     type: arduino
-  psram:
-    mode: quad
-    speed: 80MHz
+
+psram:
+  mode: quad
+  speed: 80MHz
 
 logger:
 
 # ================= NETWORKING =================
 
-# ---- WiFi (Primary) ----
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  ap:
-    ssid: "ESP32-POE2 Fallback"
-    password: "fallback123"
-
-captive_portal:
-
-# ---- Ethernet (Secondary / Backup) ----
+# ---- Ethernet ----
 ethernet:
   type: LAN8720
   mdc_pin: GPIO23
   mdio_pin: GPIO18
-  clk_mode: GPIO0_IN
+  clk:
+    pin: GPIO0
+    mode: CLK_OUT
   phy_addr: 0
   power_pin: GPIO12
 
@@ -48,7 +41,7 @@ sensor:
   - platform: adc
     pin: GPIO39
     name: "External Power Sense"
-    attenuation: 11db
+    attenuation: 12db
     update_interval: 10s
 
 # ================= UEXT CONNECTOR =================
@@ -86,5 +79,7 @@ spi:
 
 # ================= CORE SERVICES =================
 ota:
+  - platform: esphome
+
 api:
 
