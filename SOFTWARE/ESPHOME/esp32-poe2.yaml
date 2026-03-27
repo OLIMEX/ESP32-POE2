@@ -16,7 +16,7 @@ logger:
 # ================= NETWORKING =================
 
 # ---- WiFi (Primary) ----
-# remember to add credentions in the secret file
+# remember to add credentials in a secret file
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
@@ -27,7 +27,7 @@ wifi:
 captive_portal:
 
 # ---- Ethernet (Secondary / Backup) ----
-# You can't use WIFI and Ethernet simultanously
+# You can't use WIFI and Ethernet simultaneously
 # in ESPHOME, if you wish to use Ethernet:
 # uncomment Ethernet section below, and
 # comment the WIFI section above
