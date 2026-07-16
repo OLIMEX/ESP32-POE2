@@ -1,0 +1,17 @@
+Notable Hardware revision changes for Olimex ESP32-POE2 board
+
+Hardware revision B2
+===
+1. FET1 , FET2, FET3 changed to IRLML6402TRPbF;
+2. Changed a couple of capacitors due to customer feedback problems:
+	c16 changed to 100uF/100V/20%/10x12MM/Ymin;
+	c22 changed to 220uF/50V/20%/8*12MM/Ymin;
+	c29 changed to 470uF/16V/20%/8*12MM/Ymin.
+
+Hardware revision B1
+===
+1. Changed the Li-PO charger with TP4054-42-SOT25-R(SOT23-5).
+
+Revision B
+===
+Initial release
